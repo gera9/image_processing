@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Procesamiento de imágenes</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/zephyr/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1">Procesamiento de Imágenes</span>
+        </div>
+      </nav>
+    </header>
+    <main class="container mt-4">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="imageInput" class="form-label">Imagen</label>
+              <input
+                type="file"
+                class="form-control"
+                name="image"
+                id="imageInput"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Procesar
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4 mb-4">
+          <ul class="list-group">
+            <li class="list-group-item" id="imgSizeField">
+              <b>Tamaño:</b> N/A
+            </li>
+            <li class="list-group-item" id="imgTypeField">
+              <b>Formato:</b> N/A
+            </li>
+            <li class="list-group-item" id="imgRateField">
+              <b>Tasa de reducción del tamaño ≈</b> N/A
+            </li>
+            <li class="list-group-item text-truncate" id="imgLinkField">
+              <b>Descargar:</b> ...
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="row">
+            <div class="col-md-12">
+              <img
+                class="img-thumbnail"
+                src="assets/no-img.jpeg"
+                alt="img"
+                width="300px"
+                id="imgTag"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container text-center">
+      <p>Gerardo M. R. - 2022</p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
