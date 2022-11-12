@@ -55,7 +55,7 @@ submitBtn.addEventListener("click", (e) => {
         } -> ${v["type"]}`;
         imgSizeField.innerHTML = `<b>Tamaño:</b> ${img.size / 1000} kB -> ${
           v["size"]
-        }`;
+        } kB`;
         imgLinkField.innerHTML = `<b>Descargar:</b> <a target="_blank" href="${v["image"]}">${v["image"]}</a>`;
 
         let compressRate = Math.round(
